@@ -24,7 +24,7 @@ $('.button#play').click(function() {
 	})
 
 	window.setTimeout(function() {
-		window.location = "play.html"
+		window.location = "http://galacemiguel.github.io/numpad-mash/play"
 	}, 1500)
 });
 
