@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numpad Mash</title>
+	<link rel="icon" type="image/png" href="resources/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+	<link type="text/css" rel="stylesheet" href="resources/css/index.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-50394516-4', 'galacemiguel.github.io');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div id="sidebar"><span id="best"></span><div id="cover"></div></div>
+	<section id="menu">
+		<div class="button" id="play" style="width: 500px; margin-top: 75px">Play</div>
+		<div class="button" id="instructions" style="width: 400px">Instructions</div>
+		<div class="button" id="options" style="width: 325px">Options</div>
+		<div class="button" id="about" style="width: 244px">About</div>
+	</section>
+	<section class="content" id="play">
+		<span id="title">NUMPAD<span style="font-family: 'GothamCondensed-Bold'">MASH</span></span>
+		<span id="credit">a game by galacemiguel</span>
+	</section>
+	<section class="content" id="instructions" style="visibility: hidden; opacity: 0">
+		<div class="info">
+			<span class="subtitle">Instructions</span>
+			<p id="instructions">Numpad Mash is a game about speed and accuracy. Any number from one to nine will be displayed on-screen at random for a set amount of time. The objective is to press on your keyboard* (or click on the virtual numpad) the corresponding number before it disappears.</p>
+			<p id="instructions">Points will be awarded for every correct press and will similarly be deducted for every mistake. Consecutive correct presses will also garner extra points, so make sure to keep a streak up!</p>
+			<p id="instructions">You will have 30 seconds to mash away. Good luck!</p>
+			<p id="instructions" style="font-size: 15px">*Make sure to turn on Num Lock if you're playing on a numpad!</p>
+		</div>
+	</section>
+	<section class="content" id="options" style="visibility: hidden; opacity: 0; overflow: hidden">
+		<div class="info">
+			<span class="subtitle">Options</span>
+			<p id="options">
+				easy<span class="line" style="width: 260px"></span><span id="easy-on" class="toggle">ON</span> <span id="easy-off" class="toggle active">OFF</span></span>
+				sound<span class="line" style="width: 218px"></span><span id="sound-on" class="toggle active">ON</span> <span id="sound-off" class="toggle">OFF</span></span><br />
+			</p>
+		</div>
+	</section>
+	<section class="content" id="about" style="visibility: hidden; opacity: 0">
+		<div class="info">
+			<span class="subtitle">About</span>
+			<table id="about">
+				<tr><td colspan="2" style="padding-top: 30px"><strong>Special thanks:</strong></td></tr>
+				<tr>
+					<td width="150px">Lance Punay</td>
+					<td>Francis Santos</td>
+				</tr>
+				<tr>
+					<td style="font-size: 15px"><em>QA Tester</em></td>
+					<td style="font-size: 15px"><em>QA Tester</em></td>
+				</tr>
+			</table>
+			<p id="about">
+				Visit my website:<br />
+				<a href="http://galacemiguel.github.io">http://galacemiguel.github.io</a><br />
+				<br />
+				&copy; 2014 - Numpad Mash is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: white; text-decoration: none">Creative Commons 4.0 License</a>
+			</p>
+		</div>
+	</section>
+
+	<audio id="right" src="resources/audio/right.wav"></audio>
+	
+	<script src="resources/js/index.js"></script>
+</body>
+</html>

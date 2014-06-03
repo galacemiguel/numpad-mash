@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numpad Mash</title>
+	<link rel="icon" type="image/png" href="resources/favicon.png" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+	<link type="text/css" rel="stylesheet" href="resources/css/play.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<section id="main">
+		<header>
+			<a href="index.html"><div id="back"><div id="arrow"></div></div></a>
+			NUMPAD<span style="font-family: 'GothamCondensed-Bold'">MASH</span>
+		</header>
+		<section id="hud">
+			<span style="font-family: 'GothamCondensed-Light'">STREAK</span>
+			<span id="streak">0</span><br />
+			<span style="font-family: 'GothamCondensed-Light'">MULTIPLIER</span>
+			x<span id="multiplier">1</span>
+			<div id="ribbon"></div>
+			<div id="clock-wipe">
+				<div id="semi-circle1"></div>
+				<div id="semi-circle2"></div>
+				<div id="mask"></div>
+			</div>
+			<div id="num-display"></div>
+			<div id="restart"><img src="resources/img/restart.png" /></div>
+			<div id="highlight"></div>
+			<span id="best"><span style="font-family: 'GothamCondensed-Light'; font-size: 72px">BEST </span>0</span>
+		</section>
+		<section id="hud2">
+			<span style="margin-left: 5px">Score</span>
+			<span id="score">0</span>
+		</section>
+		<div style="height: 380px"></div>
+	</section>
+	<section id="console">
+		<div id="numpad">
+			<table id="numpad">
+				<tr>
+					<td id="144" class="words"><span class="text">Num<br />Lock</span></td>
+					<td id="111" class="symbol"><span class="text">/</span></td>
+					<td id="106" class="symbol"><span class="text">*</span></td>
+					<td id="109" class="symbol"><span class="text">-</span></td>
+				</tr>
+				<tr>
+					<td id="103"><span class="text">7</span></td>
+					<td id="104"><span class="text">8</span></td>
+					<td id="105"><span class="text">9</span></td>
+					<td id="107" class="symbol" rowspan="2"><span class="text">+</span></td>
+				</tr>
+				<tr>
+					<td id="100"><span class="text">4</span></td>
+					<td id="101"><span class="text">5</span></td>
+					<td id="102"><span class="text">6</span></td>
+				</tr>
+				<tr>
+					<td id="97"><span class="text">1</span></td>
+					<td id="98"><span class="text">2</span></td>
+					<td id="99"><span class="text">3</span></td>
+					<td id="13" class="words" rowspan="2"><span class="text">Enter</span></td>
+				</tr>
+				<tr>
+					<td id="96" colspan="2"><span class="text">0</span></td>
+					<td id="110" class="symbol"><span class="text">.</span></td>
+				</tr>
+			</table>
+		</div>
+		<div id="bars">
+			<div class="bar one" style="height: 25px"></div>
+			<div class="bar two" style="height: 40px"></div>
+			<div class="bar three" style="height: 65px"></div>
+			<div class="bar four" style="height: 100px"></div>
+			<div class="bar five" style="height: 145px"></div>
+			<div class="bar six" style="height: 200px"></div>
+			<div class="bar seven" style="height: 260px; margin-right: 304px"></div>
+
+			<div class="bar seven" style="height: 260px"></div>
+			<div class="bar six" style="height: 200px"></div>
+			<div class="bar five" style="height: 145px"></div>
+			<div class="bar four" style="height: 100px"></div>
+			<div class="bar three" style="height: 65px"></div>
+			<div class="bar two" style="height: 40px"></div>
+			<div class="bar one" style="height: 25px"></div>
+		</div>
+	</section>
+
+	<audio id="right" src="resources/audio/right.wav"></audio>
+	<audio id="wrong" src="resources/audio/wrong.wav"></audio>
+
+	<script src="resources/js/play.js"></script>
+</body>
+</html>
